@@ -2,6 +2,6 @@ version 2:
 
 sources:
   - name: jafflestore
-    schema: jafflestore
+    schema: JaffleShop
     tables:
       - name: customers
