@@ -3,8 +3,8 @@ with customers as (
     from {{ ref('silver_customers')}}
 )
 
-select 
-    top 10 
+select  
     *
     , 'testing_col' as test_col
 from customers
+limit 10
