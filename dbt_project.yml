@@ -27,5 +27,6 @@ models:
         +schema: chris_curated_lh
       
       analytics:
+        +database: chris_curated_lh
         +materialized: table
         +schema: chris_analytics_lh
