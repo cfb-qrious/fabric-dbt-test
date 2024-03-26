@@ -23,9 +23,8 @@ models:
   jaffle_shop:
       curated:
         +materialized: view
-        +database: chris_curated_lh
-        +schema: test
+        +schema: chris_curated_lh
+      
       analytics:
         +materialized: table
-        +database: chris_analytics_lh
-        +schema: test
+        +schema: chris_analytics_lh
