@@ -21,6 +21,11 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   jaffle_shop:
-      materialized: table
-      staging:
-        materialized: view
+      curated:
+        +materialized: view
+        +database: chris_curated_lh
+        +schema: test
+      analytics:
+        +materialized: table
+        +database: chris_analytics_lh
+        +schema: test
