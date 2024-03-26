@@ -22,6 +22,7 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 models:
   jaffle_shop:
       curated:
+        +database: chris_curated_lh
         +materialized: view
         +schema: chris_curated_lh
       
