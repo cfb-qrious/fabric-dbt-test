@@ -21,10 +21,10 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   jaffle_shop:
-      curated:
-        +materialized: view
-        +schema: chris_curated_lh
-      
-      analytics:
+      silver:
         +materialized: table
-        +schema: chris_analytics_lh
+        +schema: Test_Source_Silver
+      
+      gold:
+        +materialized: table
+        +schema: Subject_Area_Gold
