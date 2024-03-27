@@ -1,7 +1,8 @@
 version 2:
 
 sources:
-  - name: jafflestore
-    schema: JaffleStore
+  - name: sales_db
+    schema: Test_Source_Bronze
     tables:
-      - name: customers
+      - name: customers_raw
+      - name: sales_raw
