@@ -3,8 +3,12 @@ with customers as (
     from {{ ref('silver_customers')}}
 )
 
-select  
-    *
-    , 'testing_col' as test_col
+select
+    {{ dbt_utils.generate_surrogate_key(['customer_name']) }} as customer_id
+    , customer_name
+    , phone_number
+    , birth_year
+    , has_club_membership
+    , count(stores_visited) as stores_visited_cnt
 from customers
-limit 10
+group by 1,2,3,4,5
