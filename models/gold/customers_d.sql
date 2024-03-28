@@ -10,5 +10,6 @@ select
     , birth_year
     , has_club_membership
     , count(stores_visited) as stores_visited_cnt
+    , 'test' as test_column
 from customers
 group by 1,2,3,4,5
