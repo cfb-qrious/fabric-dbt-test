@@ -1,9 +1,9 @@
-name: 'fabric-dbt-test'
+name: 'fabric_dbt_test'
 
 config-version: 2
 version: '0.1'
 
-profile: 'fabric-dbt-test'
+profile: 'fabric_dbt_test'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -20,7 +20,7 @@ clean-targets:
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
-  fabric-dbt-test:
+  fabric_dbt_test:
       silver:
         +materialized: table
         +schema: Test_Source_Silver
