@@ -23,8 +23,4 @@ models:
   fabric_dbt_test:
       silver:
         +materialized: table
-        +schema: Test_Source_Silver
-      
-      gold:
-        +materialized: table
-        +schema: Subject_Area_Gold
+        +schema: Silver_Example_Source
